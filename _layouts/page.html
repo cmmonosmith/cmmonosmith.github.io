@@ -1,0 +1,18 @@
+<meta charset="utf-8">
+<html>
+    <head>
+        <title>{{ site.title }}</title>
+        <link rel="stylesheet" href="/styles/main.css">
+        <link rel="shortcut icon" href="/favicon.png">
+    </head>
+    <body>
+        <div class="page">
+            {% include banner.html %}
+            {% include nav.html %}
+            <h1 class="heading">{{ page.heading }}</h1>
+            <div class="subheading">{{ page.subheading }}</div>
+            {{ content }}
+        </div>
+    </body>
+</html>
+

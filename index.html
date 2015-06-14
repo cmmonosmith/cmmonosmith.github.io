@@ -1,7 +1,17 @@
-<!DOCTYPE html>
-<html>
-    <body>
-        <h1>Hello World</h1>
-        <p>I'm hosted with GitHub Pages.</p>
-    </body>
-</html>
+---
+layout: page
+heading: INDEX
+subheading: "a website devoted to the truth"
+---
+
+<p>Welcome to monosmith.com, a browser-agnostic, reactive, umm... modern, web 2.9, html 13 blog... where anything is possible!</p>
+
+<p>Below you will find a collection of "my posts, my posts, my lovely software boasts."</p>
+
+<ul class="post-link-list">
+    {% for post in site.posts %}
+        <li class="post-link">
+            <a href="{{ post.url }}">{{ post.title }}</a>: {{ post.excerpt }}
+        </li>
+    {% endfor %}
+</ul>
