@@ -1,0 +1,17 @@
+---
+layout: page
+heading: DREAMS
+subheading: "daily data post-processing and late-night entertainment"
+---
+
+<p>I keep a dream journal, whenever I'm able. I've been doing so since high school, and it's always been awesome. Obviously there are some I won't share, or details I'll omit, but for the most part this'll be it. Also the one here will be point-forward. 10 years of dreams is a bit much to transcribe from crappy sleepy handwriting.</p>
+
+<p>Without further ado...</p>
+
+<ul class="dream-link-list">
+    {% for dream in site.categories.dream %}
+        <li class="dream-link">
+            <a href="{{ dream.url }}">{{ dream.title }}</a>: {{ dream.excerpt }}
+        </li>
+    {% endfor %}
+</ul>

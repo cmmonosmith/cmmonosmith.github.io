@@ -2,6 +2,7 @@
 layout: post
 title: "Re-re-re-reboot"
 excerpt: "Starting Over with GitHub Pages"
+categories: ["blog"]
 ---
 
 <p>I've decided to restart my blog with <a href="https://pages.github.com/">GitHub Pages</a>.</p>
